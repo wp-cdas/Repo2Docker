@@ -14,14 +14,14 @@ import xml.etree.ElementTree as ET
 from traitlets import Dict
 
 TEMPLATE = r"""
-FROM nvidia/cuda:10.1-cudnn7-runtime-ubuntu16.04
+FROM nvidia/cuda:10.1-cudnn7-runtime-ubuntu18.04
 
 # avoid prompts from apt
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Set up locales properly
 RUN apt-get -qq update && \
-    apt-get -qq install --yes --no-install-recommends locales > /dev/null && \
+    apt-get -qq install --yes --no-install-recommends locales wget bzip2 > /dev/null && \
     apt-get -qq purge && \
     apt-get -qq clean && \
     rm -rf /var/lib/apt/lists/*
