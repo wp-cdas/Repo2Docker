@@ -1,4 +1,4 @@
-## This fork changes the base image of the dockerfile template to a CUDA-compatible image to facilitate GPU usage.
+### This fork changes the base image of the dockerfile template to a CUDA-compatible image to facilitate GPU usage.
 
 # <a href="https://github.com/jupyter/repo2docker"><img src="https://raw.githubusercontent.com/jupyter/repo2docker/3fa7444fca6ae2b51e590cbc9d83baf92738ca2a/docs/source/_static/images/repo2docker.png" height="48px" /> repo2docker</a>
 
