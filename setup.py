@@ -44,7 +44,7 @@ __cmdclass = versioneer.get_cmdclass()
 __cmdclass["generate_dataverse_file"] = GenerateDataverseInstallationsFileCommand
 
 setup(
-    name="jupyter-repo2docker",
+    name="wpcdas-repo2docker",
     version=versioneer.get_version(),
     install_requires=[
         "docker",
@@ -86,8 +86,7 @@ setup(
     cmdclass=__cmdclass,
     entry_points={
         "console_scripts": [
-            "jupyter-repo2docker = repo2docker.__main__:main",
-            "repo2docker = repo2docker.__main__:main",
+            "wpcdas-repo2docker = repo2docker.__main__:main"
         ]
     },
 )
