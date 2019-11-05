@@ -14,7 +14,7 @@ import xml.etree.ElementTree as ET
 from traitlets import Dict
 
 TEMPLATE = r"""
-FROM buildpack-deps:bionic
+FROM nvidia/cuda:10.1-cudnn7-runtime-ubuntu18.04
 
 # avoid prompts from apt
 ENV DEBIAN_FRONTEND=noninteractive
